@@ -2,6 +2,8 @@
 
 This project is a fully functional enquiry management system built using **React**. It demonstrates **Create, Read, Update, Delete (CRUD)** functionality with form handling, data persistence using `localStorage`, and a user-friendly interface for managing user enquiries. The project uses **Bootstrap 5** for styling and **react-toastify** for notifications.
 
+### Live: https://react-enquiry-system-app.netlify.app/
+
 ## Features
 
 - **CRUD Operations**: Users can add, view, update, and delete enquiry records.
