@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #70c1ff, #498ffc);
+  min-height: 105vh;
+}
+
+.enquiry_form {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.enquiry_form h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.enquiry_form form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.enquiry_form label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.enquiry_form input, .enquiry_form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.enquiry_form button {
+  padding: 10px;
+  background-color: #fff;
+  color: #498ffc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.enquiry_form button:hover {
+  background-color: #afdcfe;
+}
+
+@media (max-width: 480px) {
+  .enquiry_form {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.table_part{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.table_part table{
+  width: 100%;
+}
+
+tbody, td, th, thead, tr {
+  border-color: inherit;
+  border-style: groove;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.table_part table th{
+  white-space: nowrap;
+}
+
+.table_part table thead{
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+}
+
+.table_part table .btn{
+  padding: 2px 6px;
+}
+
+.table_part table td{
+  border-bottom: .05rem solid #8e8e8e;
+  border-left: .05rem solid #8e8e8e;
+}
+
+.table_part table td:last-child{
+  border-right: .05rem solid #8e8e8e;
+}
