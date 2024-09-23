@@ -77,12 +77,26 @@ function App() {
           toast.error("email or phone number already exists");
         }
         else{
-          let oldUserData = userData;
-          oldUserData[editIndex]['uname'] = formData.uname;
-          oldUserData[editIndex]['uemail'] = formData.uemail;
-          oldUserData[editIndex]['uphone'] = formData.uphone;
-          oldUserData[editIndex]['umessage'] = formData.umessage;
-          setUserData(oldUserData);
+          // let oldUserData = userData;
+          // oldUserData[editIndex]['uname'] = formData.uname;
+          // oldUserData[editIndex]['uemail'] = formData.uemail;
+          // oldUserData[editIndex]['uphone'] = formData.uphone;
+          // oldUserData[editIndex]['umessage'] = formData.umessage;
+          // setUserData(oldUserData);
+
+          let updatedUserData = userData.map((item, index) => {
+            if (index === editIndex) {
+              return {
+                uname: formData.uname,
+                uemail: formData.uemail,
+                uphone: formData.uphone,
+                umessage: formData.umessage
+              };
+            }
+            return item;
+          });
+  
+          setUserData(updatedUserData);
 
           setFormData({
             uname: '',
